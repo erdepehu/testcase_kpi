@@ -1,0 +1,87 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TestResults</title>
+    
+    <script language="javascript" type="text/javascript" src="/../jquery/jquery-1.9.1.js"></script>
+    <script language="javascript" type="text/javascript" src="/../jquery/jquery-ui.js"></script>
+    <link   rel="stylesheet" type="text/css" href="/../jquery/jquery-ui.css" />
+        
+    <!-- quickflip -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery.quickflip.min.js" type="text/javascript"></script>
+    <!-- ends here -->
+    
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/cupertino/jquery-ui.css" />                                 
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">                                  
+    <link rel="canonical" href="http://www.alessioatzeni.com/wp-content/tutorials/html-css/CSS3-loading-animation-loop/index.html" />
+    <link rel="stylesheet" type="text/css" href="html.css">                                                                          
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+
+    <script type="text/javascript" src="js/GlobalVariables.js"></script>
+    <script type="text/javascript" src="js/Processor.js"></script>
+    <script type="text/javascript" src="js/Ajax.js"></script>
+    <script type="text/javascript" src="/../../system_testeditor/js/UseFullFunctions.js"></script>
+    <script type="text/javascript" src="js/MD5.js"></script>
+    <script type="text/javascript" src="js/test_case_KPI.js"></script>
+            
+    <script>
+        
+            
+    </script>
+
+</head>
+
+<body> 
+
+    <div id="progressbar"><div class="progress-label">Loading testcases...</div></div>
+    <div id = "TR">
+        <div id = 'Errors'>
+            <div id = 'error'></div>
+            <div id = 'time' ></div>
+        </div>
+    
+        <table id = "test_results" style="width:100%"> 
+            <h1 id = "Projects_title"></h1>
+        </table>    
+        <div id="progressbar2"><div class="progress-label">Loading screenshots...</div></div>
+    </div>
+
+    <div id = "testcases" style="display:none"></div>
+    <div id = "screenshots" style="display:none"></div>
+
+</body>
+
+<script>
+    $("#progressbar2").hide();
+    progress_bar();
+    
+    setTimeout(function() {
+        document.getElementById("test_results").innerHTML = "";
+        init_page(1);
+        //$("#progressbar2").show();
+    }, 200 );      
+
+    /*
+    setTimeout(function() {
+    	SCREENSHOTS = get_screenshots_by_version();
+    	var div = document.getElementById("div_0");
+    	div.onclick = show_dialog;
+    	$("#progressbar2").hide();
+    }, 500 );   
+   */
+    
+	setInterval(function() {
+        document.getElementById("test_results").innerHTML = "";
+        init_page(1);
+    }, 300000 );    
+    
+</script>
+
+</html>

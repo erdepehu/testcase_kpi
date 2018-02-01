@@ -1,0 +1,113 @@
+.ui-progressbar {
+  position: relative;
+}
+.progress-label {
+  position: absolute;
+  left: 50%;
+  top: 4px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.ui-progressbar2 {
+  position: absolute;
+  top: 600px;
+}
+.progress-label2 {
+  position: absolute;
+  left: 50%;
+  top: 600px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+#perfectdiv_0{
+  font-size: 20px;
+  font-style: bold;
+  color: #FFF;
+  text-align: center;
+}
+
+#row_0 {
+    border: 1px solid rgb(194, 237, 225);
+    height: 50px;
+    color: black;
+}
+
+body {
+    background: rgb(194, 237, 225);
+    color:seagreen;
+}
+
+.red{
+    background:rgb(248, 190, 213);
+    height: 200px;
+}
+
+.green{
+    background:rgb(196, 236, 159);
+    height: 200px;
+}
+
+.perfect{
+    background:rgb(232, 248, 243);
+    height: 200px;
+}
+
+
+.yellow{
+    background: rgb(231, 231, 116);
+    height: 200px;
+}
+
+li {
+    position: absolute;
+    top: 650px;
+    margin: 0;
+    padding: 0 10px;
+    border-left: 1px black;
+    font-size: 24px;
+    font-weight:bold;
+    float: left;
+    list-style: none;
+}   
+
+#testcases{
+    background: rgb(232, 248, 243);
+}
+
+#screenshots{
+    background: rgb(232, 248, 243);
+    border: 1px solid black;  
+}
+
+table{
+    display:table;
+    table-layout:fixed;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table, th, td {
+	display: table-cell;
+    width:auto;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#a{
+	border: 1px solid black;
+	background: rgb(194, 237, 225);
+}
+
+#testcases_list{
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    position: absolute;
+    margin-left: -50;
+    margin-top: -90;
+    opacity: 0.1;
+}
